@@ -1,0 +1,19 @@
+var numeroDePessoas = 5;
+var somaIdades = 0;
+var maiorIdade = -Infinity;
+
+for (var i = 0; i < numeroDePessoas; i++) {
+  var nome = prompt("Digite o nome da pessoa " + (i + 1) + ":");
+  var idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+
+  somaIdades += idade;
+
+  if (idade > maiorIdade) {
+    maiorIdade = idade;
+  }
+}
+
+var mediaIdades = somaIdades / numeroDePessoas;
+
+alert("A média de idade das pessoas é: " + mediaIdades.toFixed(1));
+alert("A maior idade entre essas pessoas é: " + maiorIdade);

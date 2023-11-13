@@ -1,0 +1,25 @@
+// Declarar as variáveis
+  let nota1, nota2, nota3, media, notaMinima;
+
+  // Pedir a nota mínima para aprovação
+  notaMinima = parseFloat(prompt("Digite a nota mínima para aprovação: "));
+
+  // Pedir as notas ao usuário
+  nota1 = parseFloat(prompt("Digite a primeira nota: "));
+  nota2 = parseFloat(prompt("Digite a segunda nota: "));
+  nota3 = parseFloat(prompt("Digite a terceira nota: "));
+  
+  // Converte os números para números inteiros
+  nota1 = parseInt(nota1);
+  nota2 = parseInt(nota2);
+  nota3 = parseInt(nota3);
+
+  // Calcular a média
+  media = (nota1 + nota2 + nota3) / 3;
+
+  // Verificar se o aluno está aprovado
+  if (media >= notaMinima) {
+    alert("Aprovado! Média: " + media);
+  } else {
+   alert("Reprovado! Média: " + media);
+  }

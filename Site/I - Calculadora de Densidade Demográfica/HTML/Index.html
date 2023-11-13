@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Stile.css">
+
+    <title> Documento </title>
+</head>
+<body>
+
+    <form id="densidadeForm">
+        <label for="populacao">População (total de habitantes):</label>
+        <input type="number" id="populacao" name="populacao" min="0" required>
+    
+        <label for="area">Área (metros quadrados):</label>
+        <input type="number" id="area" name="area" min="0" required>
+    
+        <button type="button" onclick="calcularDensidade()">Calcular Densidade</button>
+    </form>
+    
+    <p id="resultado"></p>
+
+    <script src="../JS/Script.js" defer> </script>
+</body>
+</html>

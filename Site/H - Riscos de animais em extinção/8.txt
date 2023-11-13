@@ -1,0 +1,21 @@
+// Declarar as variáveis
+  let especie, populacao;
+
+  // Pedir ao usuário para digitar o nome da espécie
+  especie = prompt("Digite o nome da espécie: ");
+
+  // Pedir ao usuário para digitar a população
+  populacao = parseInt(prompt("Digite a população: "));
+
+  // Classificar a população
+  let classificacao = "";
+  if (populacao <= 200) {
+    classificacao = "Espécie criticamente em perigo";
+  } else if (populacao <= 500) {
+    classificacao = "Espécie em perigo";
+  } else if (populacao <= 1000) {
+    classificacao = "Espécie vulnerável";
+  }
+
+  // Imprimir o alerta
+  alert("A espécie " + especie + " está " + classificacao + "!");

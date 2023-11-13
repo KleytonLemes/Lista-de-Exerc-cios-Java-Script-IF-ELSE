@@ -1,0 +1,13 @@
+//3 Calculadora de IMC
+
+// Declara as variáveis
+const peso = prompt("Digite seu peso (em quilogramas): ");
+const altura = prompt("Digite sua altura (em metros): ");
+
+// Calcula o IMC
+const imc = peso / (altura * altura);
+
+// Imprime o resultado
+alert(`
+Seu IMC é ${imc}
+`);

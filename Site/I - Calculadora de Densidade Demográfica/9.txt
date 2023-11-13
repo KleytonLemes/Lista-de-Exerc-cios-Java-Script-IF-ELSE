@@ -1,0 +1,20 @@
+  // Declarar as variáveis
+  let populacao, area, densidade;
+
+  // Pedir ao usuário para digitar a população
+  populacao = parseInt(prompt("Digite a população: "));
+
+  // Pedir ao usuário para digitar a área
+  area = parseInt(prompt("Digite a área: "));
+
+  // Calcular a densidade
+  densidade = populacao / (area / 1000000);
+
+  // Classificar a densidade
+  if (densidade >= 100) {
+    alert("Densidade alta");
+  } else if (densidade >= 25) {
+    alert("Densidade média");
+  } else {
+    alert("Densidade baixa");
+  }

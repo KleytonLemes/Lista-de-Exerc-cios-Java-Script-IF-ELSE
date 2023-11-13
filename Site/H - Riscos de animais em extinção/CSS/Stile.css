@@ -1,0 +1,34 @@
+
+
+*{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 50px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 87vh;
+}
+
+
+
+

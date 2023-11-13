@@ -1,0 +1,20 @@
+// Solicitar ao usuário para inserir dois números aleatórios
+var numero1 = parseInt(prompt("Digite o primeiro número:"));
+var numero2 = parseInt(prompt("Digite o segundo número:"));
+
+// Converte os números para números inteiros
+numero1 = parseInt(numero1);
+numero2 = parseInt(numero2);
+
+// Verificar se os números são iguais
+if (numero1 === numero2) {
+ alert(numero1 + " é igual a " + numero2);
+} 
+// Verificar se o primeiro número é maior
+else if (numero1 > numero2) {
+  alert(numero1 + " é maior que " + numero2);
+} 
+// Se nenhum dos casos acima for verdadeiro, o segundo número deve ser maior
+else {
+  alert(numero2 + " é maior que " + numero1);
+}

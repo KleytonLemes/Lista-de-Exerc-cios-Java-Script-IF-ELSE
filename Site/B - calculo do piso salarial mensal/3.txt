@@ -1,0 +1,18 @@
+let salarioAnual, salarioMensal, pisoSalarialMensal;
+
+// Pedir o salário anual ao usuário
+salarioAnual = parseFloat(prompt("Digite o salário anual: "));
+
+// Pedir o piso salarial mensal ao usuário
+pisoSalarialMensal = parseFloat(prompt("Digite o piso salarial mensal: "));
+
+// Calcular o salário mensal
+salarioMensal = salarioAnual / 12;
+
+// Verificar se o salário mensal está de acordo com o piso
+if (salarioMensal >= pisoSalarialMensal) {
+    alert("Salário mensal: " + salarioMensal + " - De acordo com o piso");
+}
+else {
+    alert("Salário mensal: " + salarioMensal + " - Abaixo do piso");
+}

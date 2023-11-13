@@ -1,0 +1,18 @@
+// Definir o nome de usuário e a senha corretos
+var usuarioCorreto = "adm";
+var senhaCorreta = "123";
+
+// Solicitar ao usuário que insira o nome de usuário e a senha
+var username = prompt("Digite o nome de usuário:");
+var password = prompt("Digite a senha:");
+
+// Verificar se o nome de usuário e a senha estão corretos
+if (username === usuarioCorreto && password === senhaCorreta) {
+  console.log("Login efetuado!");
+} else if (username === usuarioCorreto) {
+  console.log("Senha incorreta. Login falhou!");
+} else if (password === senhaCorreta) {
+  console.log("Nome de usuário incorreto. Login falhou!");
+} else {
+  console.log("Nome de usuário e senha incorretos. Login falhou!");
+}
